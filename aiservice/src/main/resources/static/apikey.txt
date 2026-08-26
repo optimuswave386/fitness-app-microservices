@@ -1,0 +1,93 @@
+------ (POSTMAN) REQUEST --------
+
+curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent" \
+  -H 'Content-Type: application/json' \
+  -H 'X-goog-api-key: AQ.Ab8RN6L_wWMdvf26Rso_QUID3BWFUBcKHQA2_4B2UIaCXuHQBg' \
+  -X POST \
+  -d '{
+    "contents": [
+      {
+        "parts": [
+          {
+            "text": "Explain how AI works in a few words"
+          }
+        ]
+      }
+    ]
+  }'
+
+----- RESPONSE ------
+
+{
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "AI learns **patterns** from massive amounts of **data** to make **predictions** and decisions.",
+                        "thoughtSignature": "EtsJCtgJARFNMg9LTumLY2NwneT7yWEg2fQ1T6LYveLigbRuaEk8rAQfQIwvpD9o5VYadv+MRLueBncWk172Pma72uLferDYamIWIolv1fk/k/aocQu8NE3+fut/sESIv//gMjzT6Tc1MtXLZVpaOxNzlG/CobS2d5eYLw3O0f1/tJQdb6n1jCMFhQKOy0bJtBj64PpK+dxvh0/MEyZDGq0qmxf4LcKk3poVGfWchgDc56UMvCHDqiEBACUZxpBWNoiTMZdKG10UlA6uOQ8n2mujJheMfTLVEoeJfDcrG072HpsyIRZdRYfUUV1AKLX4L2dmd7hEa5ISgwXZIkoHTZ+cdlE21Dd2MEtgGm/BoY1ZO0x9iOhEkHI7V+t159WknSDWeiB1yJnOrPBznqUlXAKRKQDn34l0F945vKd4DuO16I3dV2+PcYoeM86hQSGQD0800RzZ7QXCHV2Aa02NFUoC5jzBmREY/+/xFrfGhOq26vY/7pHRsDbb1R6dJfIpCdMu05g2c2snoyW5DM1q6di6G4Kg8CffBr29Y4lHu8BuHKq+S6xEr4JVUab8zNi6g9C7e2NjYEkuYPS+6927nVAQ5gJ7vaIHzDSh8sOQiPCRpBDTp9aRT7zgTb9pA/m7UeFjn98anA6T1UfnwxpjyRxKufDkRTIdkmX6L1B2ueJqBYJB9191TwUww9nzHLh64aEkbFEtdETBaVhNPvhbRqWTPm3mXJGajFW8IkmxKoYj4OyCIB1YNii654efi52nCPgXk+8/Aycu28nLll6eICfCsvBUR50CVytPg6AtGaa1ziI4Zbnx3bZclAxEXx+mW57d9LXrpGD3FrCa1Doup2vvaVZPgf+AcPZauvMGvLJZEdFKYuUp+9IGSFQ8KWxpLZ97qO9N7intnaPmF2RfcmcnTWEbBwexgI1ak2lmBxLxrWb+HIDl/FutpHP2UAUp3WDeazQNVdjE/winqDDhrIIYEpjdUzknqS10/CJMuBW9YQxr0qoc5Lq62krUabaR9h+0A3RI0R9N5pLjjLkVym7ipL+9aD3K4DCEdNWZuit4FGTHBAIZoQO6d1GzwVEfsevU+Fe5riozdlNzjwUt4b+ZpkFUiwlCNiz4otoILj5TcbZDuxTjbbWLX+KfY3lsJWBQQRLANUr/cm4P4W2qVA0tAgJDTHiomoQVgsYfqKwbLOeCAQZUXSioYvaXYre7muxdH2lg1fL5RhWNMORVT8Evd1VI9oQOq3B5v8XySbog94G67rdXUGT4sQ1S/sq9V+NfCQPApYl5mGjfchepgNZ0m8UB5l1hDmIUNs2ICiEfKaCFUYuTI7U2tJfJwUpw/nqOE1VjcfHkdPDSe/0M0OH7KnWNDqRR+QjI2msgzMo1vi+OydqlqnbR2byo9Cy5nYsbrAODCKyC2KK/G5Q32Minqc5drE4MGKD3BzT7Nq8RMRXRoLUdlTaRNlZHgep5CutZUNSlMKTftx/E556Sr6AVsX17PVKdgFAsiel6kJwI0g0G2QYI/CZSlQap8EAjGLuKfblmv3QtxNwf8869l2w5Ku2z7yT7pZSed1WLGpXKYJn2i7HJyoqMNOPgeVw39h3A1Lf1UxcJeHzIIcU6fi2k47fxVJBX6qkXP2eqarKXHQDhxNKA8wjbmlTBwA=="
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "index": 0
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 8,
+        "candidatesTokenCount": 20,
+        "totalTokenCount": 305,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 8
+            }
+        ],
+        "thoughtsTokenCount": 277,
+        "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.7-flash",
+    "responseId": "-EmLarP_FaiOjrEPze_poAs"
+}
+
+----- RESPONSE ------
+
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"analysis\": {\n    \"overall\": {\n      \"performance\": {\n        \"summary\": \"Completed a 30-minute running workout covering 3.2 units of distance with an energy expenditure of 300 kcal (~10 kcal/min).\",\n        \"speedAndPacing\": \"Maintained an average speed of 10.4 km/h, reflecting a steady, moderate-to-tempo running pace.\",\n        \"cardiovascularEffort\": \"Peaked at a maximum heart rate of 165 bpm, indicating sustained work primarily in the aerobic-to-threshold zones (Zone 3/4), effective for building cardiovascular stamina and metabolic efficiency.\"\n      },\n      \"improvements\": [\n        \"Pacing Strategy: Introduce progressive splits (running the second half slightly faster than the first) to build finishing stamina and energy management.\",\n        \"Cadence & Stride Efficiency: Work toward an optimal running cadence of 165–175 steps per minute to lower ground contact time and reduce joint impact.\",\n        \"Aerobic Base Conditioning: Complement tempo runs with lower-intensity Zone 2 sessions to strengthen mitochondrial density and aerobic endurance.\"\n      ],\n      \"nextWorkoutSuggestions\": [\n        {\n          \"workoutType\": \"Recovery / Zone 2 Base Run\",\n          \"duration\": \"35–40 minutes\",\n          \"intensity\": \"Low (conversational pace, HR below 140 bpm)\",\n          \"focus\": \"Promote active recovery and structural tendon/joint adaptation.\"\n        },\n        {\n          \"workoutType\": \"Interval / Speed Play (Fartlek)\",\n          \"duration\": \"25–30 minutes\",\n          \"structure\": \"5 min warm-up + 6x (1 min fast at ~12 km/h / 1.5 min easy jog) + 5 min cool-down\",\n          \"focus\": \"Raise lactate threshold and improve top-end aerobic capacity.\"\n        }\n      ],\n      \"safetyGuidelines\": [\n        \"Pre-Run: Complete a 5–8 minute dynamic warm-up (leg swings, calf raises, high knees) to prime muscles and joints.\",\n        \"Post-Run: Dedicate 5 minutes to cool down and perform static stretches targeting hamstrings, quadriceps, calves, and hip flexors.\",\n        \"Recovery & Hydration: Rehydrate with water and electrolytes within 30 minutes post-workout, and allow at least 24–48 hours before the next high-intensity running session.\"\n      ]\n    }\n  }\n}\n```",
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 112,
+    "candidatesTokenCount": 563,
+    "totalTokenCount": 1863,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 112
+      }
+    ],
+    "thoughtsTokenCount": 1188,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.7-flash",
+  "responseId": "RYqLavyQOeKHjrEP7IDkgQE"
+}
+
+---- PARSED RESPONSE -----
+
+PARSED RESPONSE FROM AI: {  "analysis": {    "overall": "Performance Analysis:\n- Pace & Output: You covered 3.2 distance units in 30 minutes at an average speed of 10.4 (approx. 5:46 min/km pace if metric), burning approximately 10 calories per minute (300 kcal total). This indicates an efficient, moderate-to-high intensity aerobic effort.\n- Cardiovascular Load: A peak heart rate of 165 bpm suggests you spent substantial time in Aerobic (Zone 3) and Threshold (Zone 4) training zones, which is optimal for building cardiovascular stamina and VO2 max.\n\nKey Improvements:\n- Cadence & Form: Focus on maintaining a steady step rate (170–180 spm) to reduce ground contact time and joint impact.\n- Negative Splitting: Practice starting slightly slower for the first 10 minutes to conserve glycogen and finish the final 5–10 minutes strong.\n\nNext Workout Suggestions:\n- Recovery / Base Run: 35–40 minutes at an easy, conversational pace (Heart Rate < 140 bpm) to facilitate active recovery and build mitochondrial density.\n- Interval Session: 5-minute warm-up, followed by 6x 400m intervals at 11.5–12.0 speed with 90 seconds walking rest, followed by a 5-minute cool-down.\n\nSafety & Recovery Guidelines:\n- Pre-Run: Perform 5 minutes of dynamic stretches (leg swings, walking lunges, high knees) before starting.\n- Post-Run: Spend 5–10 minutes cooling down with light walking and static stretching for hamstrings, calves, and hip flexors.\n- Hydration: Rehydrate with 350–500 ml of water and electrolytes post-workout.\n- Footwear: Monitor running shoe mileage (recommended lifespan is 500–800 km) to prevent overuse injuries like shin splints or plantar fasciitis."  }} 
+
+
+
